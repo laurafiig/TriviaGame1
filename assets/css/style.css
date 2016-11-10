@@ -1,0 +1,24 @@
+/*sets background for page*/
+body {
+	background-image: url("../images/Fellowship.jpg");
+	background-size: 100%;
+}
+
+/*center all text*/
+* {
+	text-align: center;
+}
+
+/*set font for heading*/
+h1 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 48px; 
+	font-style: italic;
+}
+
+/*sets background for game board*/
+.container {
+	background-image: url("../images/old_map.png");
+	border: 5px solid brown;
+}
+

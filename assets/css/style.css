@@ -16,9 +16,20 @@ h1 {
 	font-style: italic;
 }
 
-/*sets background for game board*/
+/*sets background and formatting for game board*/
 .container {
 	background-image: url("../images/old_map.png");
 	border: 5px solid brown;
+	min-height: 500px;
 }
 
+/*spacing for buttons*/
+#start #done {
+	margin: 25px;
+}
+
+/*formatting for map*/
+#map {
+	width: 750px; 
+	margin: 25px;
+}

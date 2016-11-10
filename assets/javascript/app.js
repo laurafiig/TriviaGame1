@@ -10,31 +10,65 @@ var blank = 10 - (correct + incorrect)
 //var 
 //etc.
 
-//$(document).ready(function() {
+$(document).ready(function() {
 
-//});
+//function to show results at end of quiz
+function results() {
+	//clears questions and shows results
+	$(".screen3").show();
+	$(".screen2").hide();
+	//writes results to html
+	$("#correct").html("Number of correct answers: " + correct);
+	$("#incorrect").html("Number of incorrect answers: " + incorrect);
+	$("#blank").html("Number of unanswered questions: " + blank);
+}
 
-//skeleton
 
-//onclick start button
-//hide start button or empty row 2
-//start timer and populate
-//populate questions and answers
-//from arrays?? push to html
-//how to create radio buttons?? list?
-//use outlined html to setup classes/id's
-//will be unpopulated at start
+//hides questions screen and results screen
+//at game start
+$(".screen2, .screen3").hide();
 
-//onclick answer button
-//return answer, compare to answer in object
-//if match ++ correct
-//else ++ incorrect
-//blank = 10 - correct - incorrect
+//when start button is clicked
+$("#start").click(function(){
+	//displays questions screen and 
+	//hides start screen    
+	$(".screen2").show();
+	$(".screen1").hide();
+	//set timer and display
 
-//done button
-//or times up
-//hide/depopulate questions and timer
-//hide or empty button
-//done/timesup message
-//push scores to html
+	//onclick answer button
+	//return answer, compare to answer in object
+	//if match ++ correct
+	//else ++ incorrect
+});
+
+//when done button is clicked
+$("#done").click(function(){
+	// display completed message
+	$("#end").html("Quiz Completed!!");
+	//stop timer
+
+	//run function to display results
+	results()
+});
+
+//when timer is up
+//time's up message
+//call function
+//results()
+//add restart button?
+
+//when restart button is clicked
+$("#restart").click(function(){
+	//hide 2 and 3 show 1
+	$(".screen1").show();
+	$(".screen2, .screen3").hide();
+	//reset variables
+	var correct = 0
+	var incorrect = 0
+});
+
+
+});
+
 

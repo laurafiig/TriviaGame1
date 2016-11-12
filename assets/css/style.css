@@ -23,13 +23,13 @@ h1 {
 	min-height: 500px;
 }
 
-/*spacing for buttons*/
-#start #done {
-	margin: 25px;
-}
-
 /*formatting for map*/
 #map {
 	width: 750px; 
 	margin: 25px;
+}
+
+/*sets margin for buttons*/
+#done, #start {
+	margin-bottom: 25px
 }

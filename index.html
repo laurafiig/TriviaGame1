@@ -1,217 +1,232 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
 	<title>Tolkien Trivia</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
+
 <body>
+	
+	<div class="container">
+		
+		<div class="row"> 
+			<div class="col-md-12">
+				<h1>Tolkien Trivia!!</h1>
+				<hr>
+			</div>
+		</div>
 
-<div class="container">
-	<div class="row"> 
-		<div class="col-md-12">
-		<h1>Tolkien Trivia!!</h1>
-		<hr>
+		<div class="row screen1"> 
+			<div class="col-md-12">
+				<button type="button" class="btn btn-default" id="start">Start</button>
+			</div>
+			<hr>
 		</div>
-	</div>
-	<div class="row screen1"> 
-		<div class="col-md-12">
-		<button id='start'>Start</button>
-		</div><hr>
-	</div>
-	<div class="row screen1"> 
-		<div class="col-md-12">
-		<img id="map" src="assets/images/images.jpg" alt="map">
+		<div class="row screen1"> 
+			<div class="col-md-12">
+				<img id="map" src="assets/images/images.jpg" alt="map">
+			</div>
 		</div>
-	</div>
-	<div class="row screen2"> 
-		<div class="col-md-12">
-		<h3 id=time></h3>
-		<hr>
-		</div>
-	</div>
-	<div class="row screen2">
-		<div class="col-md-12">
-		<p>Q1: Which hobbit did not leave the Shire with Frodo?</p>
-  		<form>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">Fatty
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Pippin
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Merry
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Sam
-    		</label>    
-  		</form>
-  		<hr>
-		<p>Q2: Which of these was not a name Gandalf was known by?</p>
-  		<form>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Olorin
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Mithrandir
-    		</label>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">Glorfindel
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Incanus
-    		</label>   
-  		</form>
-  		<hr>
-		<p>Q3: Which member of the Fellowship did not survive?</p>
-  		<form>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">Boromir
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Gimli
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Pippin
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">Sam
-    		</label>   
-  		</form>
-  		<hr>
-		<p>Q4: How many Rings of Power were forged in the Second Age?</p>
-  		<form>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">3
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">13
-    		</label>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">20
-    		</label>
-    		<label class="radio-inline" id="false">
-      			<input type="radio" name="optradio">9
-    		</label>   
-  		</form>
-  		<hr>
-		<p>Q5: How many Wizards came to Middle Earth in the Third Age?</p>
-  		<form>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">2
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">3
-    		</label>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">5
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">9
-    		</label>   
-  		</form>
-  		<hr>
-		<p>Q6: Which of these was not a name Aragorn was known by?</p>
-  		<form>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Strider
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Elessar
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Estel
-    		</label>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">Tar-Palantir
-    		</label>   
-  		</form>
-  		<hr>
-		<p>Q7: Who was not the bearer of an Elven ring?</p>
-  		<form>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Gandalf
-    		</label>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">Celeborn
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Galadriel
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Elrond
-    		</label>   
-  		</form>
-  		<hr>
-		<p>Q8: Galadriel is Elrond's ______</p>
-  		<form>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Sister
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Neice
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Cousin
-    		</label>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">Mother-in-Law
-    		</label>   
-  		</form>
-  		<hr>
-		<p>Q9: Who kills Saruman?</p>
-  		<form>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Treebeard
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Gandalf
-    		</label>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">Wormtongue
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Sauron
-    		</label>   
-  		</form>
-  		<hr>
-		<p>Q10: Who did not go to the Undying Lands with Frodo.</p>
-  		<form>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Gandalf
-    		</label>
-    		<label class="radio-inline" id="true">
-      			<input type="radio" name="optradio">Arwen
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Galadriel
-    		</label>
-    		<label class="radio-inline">
-      			<input type="radio" name="optradio">Bilbo
-    		</label>   
-  		</form>
-  		<hr>		
-		</div>
-	</div>
-	<div class="row screen2"> 
-		<div class="col-md-12">
-		<button id='done'>DONE</button>
-		<br>
-		</div>
-	</div>
-	<div class="row screen3"> 
-		<div class="col-md-12">
-		<h4 id=end></h4><hr>
-		<p id=correct></p><hr>
-		<p id=incorrect></p><hr>
-		<p id=blank></p><hr>
-		</div>
-	</div>
-</div>
 
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+		<div class="row screen2"> 
+			<div class="col-md-12">
+				<h3>Time remaining: </h3>
+				<h3 id="time"></h3>
+				<hr>
+			</div>
+		</div>
 
+		<div class="row screen2">
+			<div class="col-md-12">
+				<form>
+				<p>Q1: Which hobbit did not leave the Shire with Frodo?</p>
+				<fieldset id="optrad1">
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad1" value="true">Fatty
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad1" value="false">Pippin
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad1" value="false">Merry
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad1" value="false">Sam
+				</label>
+				</fieldset>    
+				<hr>
+				<p>Q2: Which of these was not a name Gandalf was known by?</p>
+				<fieldset id="optrad2">
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad2" value="false">Olorin
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad2" value="false">Mithrandir
+				</label>
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad2" value="true">Glorfindel
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad2" value="false">Incanus
+				</label>   
+				</fieldset>
+				<hr>
+				<p>Q3: Which member of the Fellowship did not survive?</p>
+				<fieldset id="optrad3">
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad3" value="true">Boromir
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad3" value="false">Gimli
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad3" value="false">Pippin
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad3" value="false">Sam
+				</label>   
+				</fieldset>
+				<hr>
+				<p>Q4: How many Rings of Power were forged in the Second Age?</p>
+				<fieldset id="optrad4">
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad4" value="false">3
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad4" value="false">13
+				</label>
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad4" value="true">20
+				</label>
+				<label class="radio-inline" data-answer="false">
+				<input type="radio" name="optrad4" value="false">9
+				</label>   
+				</fieldset>
+				<hr>
+				<p>Q5: How many Wizards came to Middle Earth in the Third Age?</p>
+				<fieldset id="optrad5">
+				<label class="radio-inline">
+				<input type="radio" name="optrad5" value="false">2
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad5" value="false">3
+				</label>
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad5" value="true">5
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad5" value="false">9
+				</label>   
+				</fieldset>
+				<hr>
+				<p>Q6: Which of these was not a name Aragorn was known by?</p>
+				<fieldset id="optrad6">
+				<label class="radio-inline">
+				<input type="radio" name="optrad5" value="false">Strider
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad6" value="false">Elessar
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad6" value="false">Estel
+				</label>
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad6" value="true">Tar-Palantir
+				</label>   
+				</fieldset>
+				<hr>
+				<p>Q7: Who was not the bearer of an Elven ring?</p>
+				<fieldset id="optrad7">
+				<label class="radio-inline">
+				<input type="radio" name="optrad7" value="false">Gandalf
+				</label>
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad7" value="true">Celeborn
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad7" value="false">Galadriel
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad7" value="false">Elrond
+				</label>   
+				</fieldset>
+				<hr>
+				<p>Q8: Galadriel is Elrond's ______</p>
+				<fieldset id="optrad8">
+				<label class="radio-inline">
+				<input type="radio" name="optrad8" value="false">Sister
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad8" value="false">Neice
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad8" value="false">Cousin
+				</label>
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad8" value="true">Mother-in-Law
+				</label>   
+				</fieldset>
+				<hr>
+				<p>Q9: Who kills Saruman?</p>
+				<fieldset id="optrad9">
+				<label class="radio-inline">
+				<input type="radio" name="optrad9" value="false">Treebeard
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad9" value="false">Gandalf
+				</label>
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad9" value="true">Wormtongue
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad9" value="false">Sauron
+				</label>   
+				</fieldset>
+				<hr>
+				<p>Q10: Who did not go to the Undying Lands with Frodo.</p>
+				<fieldset id="optrad10">
+				<label class="radio-inline">
+				<input type="radio" name="optrad10" value="false">Gandalf
+				</label>
+				<label class="radio-inline" data-answer="true">
+				<input type="radio" name="optrad10" value="true">Arwen
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad10" value="false">Galadriel
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="optrad10" value="false">Bilbo
+				</label>
+				</fieldset>   
+				<hr>		
+				<button type="button" class="btn btn-default" id="done">DONE</button>
+				<br>
+				</form>
+
+			</div>
+		</div>
+		
+		<div class="row screen3"> 
+			<div class="col-md-12">
+				<h4 id=end></h4>
+				<hr>
+				<p id=correct></p>
+				<hr>
+				<p id=incorrect></p>
+				<hr>
+				<p id=blank></p>
+				<hr>
+				<button type="button" class="btn btn-default" id="tryAgain">Try Again</button>
+			</div>
+		</div>
+
+	</div> <!--end container-->
+	
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+
 </html>

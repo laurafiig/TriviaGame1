@@ -33,3 +33,6 @@ h1 {
 #done, #start {
 	margin-bottom: 25px
 }
+
+/*timer display*/
+h3 {display: inline;}
